@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h3>Student Portal</h3>
+        </header>
+        <main class="main">
+            <div class="search_container">
+                <input type="text" id="input" class="search_input" placeholder="Search">
+                <button type="submit" id="search_btn">Search</button>
+            </div>
+            <div class="filters_container">
+                <button id="sort_AZ">Sort A&#10141;Z</button>
+                <button id="sort_ZA">Sort Z&#10141;A</button>
+                <button id="sort_byMarks">Sort By Marks</button>
+                <button id="sort_byPass">Sort By Passing</button>
+                <button id="sort_byClass">Sort By Class</button>
+                <button id="sort_byGender">Sort By Gender</button>
+            </div>
+            <div class="table_container">
+                <table id="table1">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>CLass</th>
+                            <th>Marks</th>
+                            <th>Passing</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody1"></tbody>
+                </table>
+                <table id="table2">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>CLass</th>
+                            <th>Marks</th>
+                            <th>Passing</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody2"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
